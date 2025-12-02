@@ -2,7 +2,7 @@
 
 A machine learning approach to predict Bit Error Rate (BER) in wireless communication systems using Artificial Neural Networks (ANN). This project simulates AWGN (Additive White Gaussian Noise) and Rayleigh fading channels, generates BER datasets, and trains ANN models to predict BER based on SNR and modulation schemes.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -16,7 +16,7 @@ A machine learning approach to predict Bit Error Rate (BER) in wireless communic
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🔍 Overview
+## Overview
 
 In wireless communications, accurately predicting the Bit Error Rate (BER) is crucial for system design and optimization. Traditional methods rely on complex mathematical formulas that can be computationally expensive. This project demonstrates how Artificial Neural Networks can be trained to predict BER efficiently across different:
 
@@ -24,7 +24,7 @@ In wireless communications, accurately predicting the Bit Error Rate (BER) is cr
 - **Modulation Schemes**: BPSK, QPSK, 16-QAM
 - **Channel Types**: AWGN and Rayleigh Fading
 
-## ✨ Features
+## Features
 
 - **MATLAB Dataset Generation**: Comprehensive simulation code for generating BER data with adaptive bit counting for accurate high-SNR measurements
 - **Jupyter Notebook Analysis**: Complete Python implementation for data preprocessing, ANN training, and visualization
@@ -33,7 +33,7 @@ In wireless communications, accurately predicting the Bit Error Rate (BER) is cr
 - **High Accuracy**: Achieves R² > 0.99 on BER prediction
 - **Comprehensive Visualization**: Training curves, prediction vs. actual plots, and BER vs. SNR curves
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── BER_PREDICTION_NOTEBOOK.ipynb    # Main Jupyter notebook with ANN implementation
@@ -44,7 +44,7 @@ In wireless communications, accurately predicting the Bit Error Rate (BER) is cr
 └── README.md                        # This file
 ```
 
-## 🔬 Methodology
+## Methodology
 
 ### Channel Models
 
@@ -79,7 +79,7 @@ The MATLAB code implements an adaptive simulation approach:
 - **Medium BER region (10⁻⁵ to 10⁻³)**: Extended bit counts for accuracy
 - **Low BER region (<10⁻⁷)**: Theoretical estimation to avoid excessive computation
 
-## 📊 Dataset
+## Dataset
 
 The dataset (`ber_dataset_improved.csv`) contains 1,230 samples with the following features:
 
@@ -92,7 +92,7 @@ The dataset (`ber_dataset_improved.csv`) contains 1,230 samples with the followi
 | `Modulation` | Modulation type label |
 | `Channel` | Channel type label |
 
-## 🧠 ANN Architecture
+## ANN Architecture
 
 The neural network architecture used for BER prediction:
 
@@ -115,7 +115,7 @@ Output Layer (1 neuron, Linear)
 - **Epochs**: 200 with early stopping
 - **Validation Split**: 20%
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
@@ -128,7 +128,7 @@ Output Layer (1 neuron, Linear)
 pip install numpy pandas tensorflow keras scikit-learn matplotlib seaborn
 ```
 
-## 💻 Usage
+## Usage
 
 ### 1. Generate Dataset (Optional)
 
@@ -152,7 +152,7 @@ Or use Google Colab:
 2. Upload `ber_dataset_improved.csv` to the session
 3. Run all cells
 
-## 📈 Results
+## Results
 
 ### Model Performance
 
@@ -168,7 +168,7 @@ Or use Google Colab:
 - The log transformation of BER significantly improves training stability
 - Early stopping prevents overfitting while achieving optimal performance
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -178,11 +178,11 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 📚 References
+## References
 
 - Reference paper included in the repository (`reference_paper.pdf`)
 - Project report: `BER_PREDICTION_using_AWGN_REILEGN_CHANNEL_USING_ANN.pdf`
